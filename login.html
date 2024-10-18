@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Login & Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="auth-container bg-white p-4 rounded shadow-lg">
+            <!-- Logo -->
+            <div class="text-center mb-4">
+                <img src="logo2.png" alt="logo" class="img-fluid">
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-container" class="form-container active">
+                <h2 class="text-center mb-4">Login to Your Account</h2>
+                <form id="loginForm" onsubmit="return validateForm()">
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div id="email-error" class="text-danger"></div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <div id="password-error" class="text-danger"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+                </form>
+                <p class="text-center">Don't have an account? <a href="#" id="show-signup">Sign up here</a></p>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signup-container" class="form-container">
+                <h2 class="text-center mb-4">Create Your Account</h2>
+                <form id="signupForm" onsubmit="return validateSignupForm()">
+                    <div class="form-group mb-3">
+                        <label for="signup-email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="signup-email" name="email" required>
+                        <div id="signup-email-error" class="text-danger"></div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="signup-password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="signup-password" name="password" required>
+                        <div id="signup-password-error" class="text-danger"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mb-2">Sign Up</button>
+                </form>
+                <p class="text-center">Already have an account? <a href="#" id="show-login">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

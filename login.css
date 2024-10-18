@@ -1,0 +1,53 @@
+/* General container styling */
+.auth-container {
+    width: 400px;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+}
+
+.form-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form-container.active {
+    display: block;
+    opacity: 1;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+input {
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+img {
+    max-width: 150px;
+    animation: logo-bounce 2s infinite;
+}
+
+@keyframes logo-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Scale effect on form switching */
+.auth-container.scaling {
+    transform: scale(1.05);
+}

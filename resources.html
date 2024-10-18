@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App SE - Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="image" src="logo2.png" alt="logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#resources">Resources</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Resources Section -->
+    <section class="resources-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Resources</h2>
+            <div class="row">
+                <!-- Downloads -->
+                <div class="col-md-6 mb-4">
+                    <h3>Downloadable Resources</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="pdf/brochure.pdf" download="AppSE-Brochure.pdf" class="resource-link">
+                                <i class="fas fa-file-pdf"></i> Company Brochure
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="pdf/user_guide.pdf" download="UserGuide.pdf" class="resource-link">
+                                <i class="fas fa-file-pdf"></i> User Guide
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="pdf/security_whitepaper.pdf" download="SecurityWhitepaper.pdf" class="resource-link">
+                                <i class="fas fa-file-pdf"></i> Security Whitepaper
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Video Tutorials -->
+                <div class="col-md-6 mb-4">
+                    <h3>Video Tutorials</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="https://www.youtube.com" target="_blank" class="resource-link">
+                                <i class="fas fa-video"></i> Introduction to App SE
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.youtube.com" target="_blank" class="resource-link">
+                                <i class="fas fa-video"></i> Setting Up Your Account
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.youtube.com" target="_blank" class="resource-link">
+                                <i class="fas fa-video"></i> Using the Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Frequently Asked Questions (FAQ)</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1">
+                            How do I create an account with App SE?
+                        </button>
+                    </h2>
+                    <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To create an account, click on the "Sign Up" button on the homepage and follow the instructions. You will need to provide your details and verify your email.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+                            What are the benefits of using App SE?
+                        </button>
+                    </h2>
+                    <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            App SE provides a range of financial services such as secure payments, easy invoicing, and fast transactions. It is trusted by thousands of merchants worldwide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+                            Is App SE secure?
+                        </button>
+                    </h2>
+                    <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, App SE uses advanced encryption technologies and adheres to industry-standard security practices to ensure that your data is protected.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">About Us</h5>
+                    <p>Your trusted partner in financial solutions. We aim to empower businesses and individuals alike.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="footer-link">Home</a></li>
+                        <li><a href="about_us.html" class="footer-link">About Us</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="resources.html" class="footer-link">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Connect with Us</h5>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 App SE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
